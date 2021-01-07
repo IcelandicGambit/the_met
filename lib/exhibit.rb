@@ -1,8 +1,9 @@
-Class Exhibit
-attr_reader :name,
-            :cost
-
-def initiatize ({name, cost})
-  @name = name
-  @cost = cost
+class Exhibit
+  attr_reader :name,
+              :cost
+              
+  def initialize (input)
+    @name = input[:name]
+    @cost = input[:cost]
+  end
 end
